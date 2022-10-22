@@ -10,5 +10,7 @@ after waiting for sometime we got shadow as password we try it in sigin page and
 
 We can avoid this vulnerablity by 
  -a strong password that doesnt belong in any wordlist
+ 
  -we can use 2fa
+ 
  -lockout account after certain attempts 
