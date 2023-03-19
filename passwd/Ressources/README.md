@@ -1,8 +1,12 @@
+# admin(htpasswd)
+
+## Attack scenario
+
 As a first step for a pentester is to check for directories and files in website one of them is robots.txt
 
 ```Robots.txt is a text file with instructions for search engine crawlers. It defines which areas of a website crawlers are allowed to search. However, these are not explicitly named by the robots.txt file. Rather, certain areas are not allowed to be searched. Using this simple text file, you can easily exclude entire domains, complete directories, one or more subdirectories or individual files from search engine crawling. However, this file does not protect against unauthorized access.```
 
-robots.txt :
+### robots.txt :
 > User-agent: *
 > 
 >Disallow: /whatever
@@ -14,13 +18,11 @@ In whatever directory we got a file called htpasswd its on the same directory of
 
 >root:437394baff5aa33daa618be47b75cb49
 
-we tried it in sigin page no result after searching I found an admin page
+we tried it in sigin page no result. after searching we found an admin page
 the password is an md5 after decryption we got qwerty123@
 
-worked in the adim page 
+It worked in the admin page 
 
->The flag is : d19b4823e0d5600ceed56d5e896ef328d7a2b9e7ac7e80f4fcdb9b10bcb3e7ff
+## Preventing robots.txt vulnerability 
 
-To avoid this problem
-tryin to dissalow a specific file in robots.txt makes it look sus for hackers
-So you need to give access in webserver to this file to admins only.
+- The robots.txt file can be viewed by anyone, and it might contain sensitive information about the server. For example, specifying which directories shouldn't be indexed tells the attacker where the sensitive files are.

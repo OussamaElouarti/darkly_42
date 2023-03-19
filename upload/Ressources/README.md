@@ -14,7 +14,7 @@ But no flag so there is another way to do it lets try with curl
 
 > -F specify data to send (files) example email=blabla@blabla.bla the email is the name of the input
 
-In ouar case there is 2 input the first one is uploaded that contain the data then Upload to submit
+In our case there is 2 input the first one is uploaded that contain the data then Upload to submit
 
 > curl -i -X POST -F "uploaded=@/Users/oel-ouar/Desktop/file.php" -F Upload=Upload http://ipaddress/?page=upload
 

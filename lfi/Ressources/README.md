@@ -1,9 +1,25 @@
-# LFI
-example of lfi vulnerbale code
+# Local File Inclusion (LFI)
+
+- Local File Inclusion is an attack technique in which attackers trick a web application into either running or exposing files on a web server.
+
+- Example of lfi vulnerbale code
 
 >$file = $_GET['file'];
 >
 >include('directory/' . $file);
+
+## Impacts of LFI vulnerabilities
+
+- The impact of a Local File Inclusion attack can vary based on the exploitation and the read permissions of the webserver user. Based on these factors, an attacker can gather usernames via an /etc/passwd file, harvest useful information from log files, or combine this vulnerability with other attack vectors (such as file upload vulnerability) to execute commands remotely.
+
+
+
+## Preventing LFI
+
+- To avoid LFI and many other vulnerabilities, never trust user input. If you need to include local files in your website or web application code, use a whitelist of allowed file names and locations. Make sure that none of these files can be replaced by the attacker using file upload functions.
+
+
+## Attack scenario
 
 In our page we got same thing but with page variable or query for example survey page
 
@@ -12,11 +28,10 @@ In our page we got same thing but with page variable or query for example survey
 We can try and go out of the root folder of the website and acces sensible data like /etc/passswd
 as start:
 > http://ipaddress/?page=../etc/passwd
-nothing we will add ../ till we got a result
+nothing happened . So we will add ../ till we got a result
 
-finally:
-> http://ipaddress/?page=../../../../../../../../etc/passwd
+- finally:
+    > http://ipaddress/?page=../../../../../../../../etc/passwd
 
-=> Congratulaton!! The flag is : b12c4b2cb8094750ae121a676269aa9e2872d07c06e429d25a63196ec1c8c1d0
+    worked and we got the flag !
 
-To avoid LFI and many other vulnerabilities, never trust user input. If you need to include local files in your website or web application code, use a whitelist of allowed file names and locations. Make sure that none of these files can be replaced by the attacker using file upload functions.
