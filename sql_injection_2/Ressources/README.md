@@ -1,5 +1,19 @@
 # SQLI 1
 
+## SQL Injection impacts
+
+The impact SQL injection can have on a business is far-reaching. A successful attack may result in the unauthorized viewing of user lists, the deletion of entire tables and, in certain cases, the attacker gaining administrative rights to a database
+
+## preventing injection flaws 
+
+Preventing injection requires keeping data separate as far away as possible from commands and queries.
+
+- The preferred option is to use a safe API providing a parameterized interface
+- Use positive or “whitelist” server-side input validation that only allows certain values as input
+- For needed dynamic queries, escape special characters using the specific escape syntax for that interpreter
+- Use LIMIT and other SQL controls within queries to prevent mass disclosure of records in case of SQL injection
+
+
 ## Attack scenario
 
 On search image I tried basic sqli 
@@ -48,15 +62,3 @@ fifth image got a sus comment lets decrypt it
 
 we got albatroz => tolower() => albatroz => sha256 => f2a29020ef3132e01dd61df97fd33ec8d7fcd1388cc9601e7db691d17d4d6188
 
-## SQL Injection impacts
-
-The impact SQL injection can have on a business is far-reaching. A successful attack may result in the unauthorized viewing of user lists, the deletion of entire tables and, in certain cases, the attacker gaining administrative rights to a database
-
-## preventing injection flaws 
-
-Preventing injection requires keeping data separate as far away as possible from commands and queries.
-
-- The preferred option is to use a safe API providing a parameterized interface
-- Use positive or “whitelist” server-side input validation that only allows certain values as input
-- For needed dynamic queries, escape special characters using the specific escape syntax for that interpreter
-- Use LIMIT and other SQL controls within queries to prevent mass disclosure of records in case of SQL injection

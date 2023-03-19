@@ -4,11 +4,11 @@ Brute force attacks utilise automated techniques such as credential stuffing and
 
 ## impacts of Brute Force attacks
 
-    - Identity theft – stealing someone’s identity to access their accounts, such as bank accounts or credit cards. This enables the attacker to purchase goods using these details. In addition, information such as social security numbers can be sold for use in other cyber attacks.
+- Identity theft – stealing someone’s identity to access their accounts, such as bank accounts or credit cards. This enables the attacker to purchase goods using these details. In addition, information such as social security numbers can be sold for use in other cyber attacks.
 
-    - Loss of data – due to loss of confidentiality if data is stolen which could destroy company reputation. Additionally, there may be reputational damage caused by a leak of sensitive customer information that leads to public distrust and dissatisfaction with the business.
+- Loss of data – due to loss of confidentiality if data is stolen which could destroy company reputation. Additionally, there may be reputational damage caused by a leak of sensitive customer information that leads to public distrust and dissatisfaction with the business.
 
-    - Downtime – this refers to system outages where websites or computer networks cannot be accessed due to a cyber attack. This is costly to the business in terms of lost revenue, customer satisfaction as well as loss of image.
+- Downtime – this refers to system outages where websites or computer networks cannot be accessed due to a cyber attack. This is costly to the business in terms of lost revenue, customer satisfaction as well as loss of image.
 
 
 ## preventing Brute Force attacks
@@ -27,7 +27,7 @@ Brute force attacks utilise automated techniques such as credential stuffing and
 
 ## attack scenario
 
-We got a user in members that had a surname GetThe and first name Flag its a bit sus
+- We got a user in members that had a surname GetThe and first name Flag its a bit sus
 
 so we will try to brute force this user in signin page using burpsuite intruder with rockyou.txt wordlist
 

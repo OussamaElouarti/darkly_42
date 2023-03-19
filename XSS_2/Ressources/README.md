@@ -1,5 +1,8 @@
 # XSS media
 
+
+## Attack scenario
+
 in this page http://10.11.43.99/?page=media&src=nsa
 
 We got another xss

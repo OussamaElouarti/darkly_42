@@ -1,5 +1,7 @@
 # Cookie
 
+## Attack scenario
+
 We inspect page shearching for cookies
 we found a cookie called I_am_admin lets decrypt the value
 >the value is md5 68934a3e9455fa72420237eb05902327 =md5 decrypt> false

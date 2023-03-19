@@ -1,5 +1,7 @@
 # password recover
 
+## Attack scenario
+
 in signin page we got "I forget my password" link
 
 after clicking it we got a page with submit button lets inspect the page
