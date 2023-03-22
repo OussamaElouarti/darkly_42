@@ -11,7 +11,7 @@ We inspect the page we got some comments at the end of the page
 >	Let's use this browser : "ft_bornToSec". It will help you a lot.
 
 We need to change the headers in the request to do that we sent a request using curl and changed referer header to "https://www.nsa.gov/
-and User-Agent to ft_bornToSec
+and User-Agent to "ft_bornToSec"
 
 the request is now like this :
 
