@@ -23,7 +23,7 @@ the message error is gone, now we need to change 1 with 0 so we display only dat
 
 > 0 union select 1,2
 
-Lets deisplay the database namme to do that we can change 1 or 2 with database function
+Lets deisplay the database name to do that we can change 1 or 2 with database function
 
 >  0 union select 1,database()
 >  
