@@ -16,8 +16,6 @@ and User-Agent to "ft_bornToSec"
 the request is now like this :
 
 > curl http://10.12.176.141/\?page\=b7e44c7a40c5f80139f0a50f3650fb2bd8d00b0d24667c4c2ca32c88e13b758f 
-> -H "Referer: https://www.nsa.gov/" 
-> -H "User-Agent: ft_bornToSec"
-
+> -e 'https://www.nsa.gov/' -A 'ft_bornToSec'
 
 and got the flag!

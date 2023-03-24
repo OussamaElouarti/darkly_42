@@ -8,7 +8,7 @@
 
 ## Preventing file upload vulnerability
 
-- **Whitelisting file types** : Implement an allow-list that enforces the usability of only those file extensions that are approved to be used by the application.
+- **Validate File Formats and Extensions** : Make sure you check the file extension of uploaded files against a white-list of permitted file types. Do this on the server-side, since client-side checks can be circumvented.
 
 - **File upload validation** : When validating file uploads, use trusted validation frameworks that address all potential gaps that attackers could exploit
 
